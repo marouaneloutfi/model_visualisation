@@ -1,3 +1,3 @@
 Model Visualisation
 
-A visualisation platform for keras maps segmentation model based on tensorspace.js 
+A visualisation of keras maps segmentation model based on tensorspace.js 
