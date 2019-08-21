@@ -404,15 +404,15 @@ $("#clear").click(function(){
                  imgData = context.getImageData( 0, 0, $canvas[0].width, $canvas[0].height );
                  canvasData = [];
                  for(let i=0; i < imgData.data.length; i += 4) {
-    // calculate luma, here using Rec 709
+
     gray = (imgData.data[i] + imgData.data[i+1] + imgData.data[i+2] )/ 3;
       if(gray == 0){
-        gray = 250;
+        gray = 255;
       }
          canvasData.push(gray);
                 }
 
-                console.log(canvasData);
+                //console.log(canvasData);
                 model.predict( canvasData, showPredicted);
             }
 
